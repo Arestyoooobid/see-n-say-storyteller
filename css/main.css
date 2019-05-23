@@ -1,0 +1,440 @@
+@charset "utf-8";
+@font-face { font-family: Cooper; src: url("../fonts/Cooper Black Regular.ttf"); } 
+/* Assignment 1 | COMP1073 Client-Side JavaScript */
+
+#disableSelection{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.body{
+    margin: 50px 200px;
+    background-color: #EE0;
+    border-radius: 10px;
+    height: 800px;
+}
+
+.left{
+    float: left;
+    margin: 10px;
+    width: 42%;
+}
+
+.column{
+    float: left;
+    height: 780px;
+    width: 19%;
+    margin: 0 0.5%;
+    border-radius: 10px;
+}
+
+#nouns1{
+    background-color: #A0F;
+}
+
+#verbs{
+    background-color: #0AF;
+}
+
+#adjectives{
+    background-color: #3F3;
+}
+
+#nouns2{
+    background-color: #FA0;
+}
+
+#nouns3{
+    background-color: #F0A;
+}
+
+.circle{
+    margin: 15px 24px;
+    border-style: solid;
+    border-color: white;
+    border-width: 12px;
+    border-radius: 40px;
+    height: 48px;
+    width: 48px;
+}
+
+.circleNumber{
+    position: relative;
+    left: 10px;
+    top: -60px;
+    font-family: "Cooper";
+    font-size: 50px;
+}
+
+#four{
+    left: 7px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.center{
+    float: left;
+    width: 11%;
+    height: 850px;
+    background-color: #06A;
+    position: relative;
+    top: -25px;
+    border-radius: 500px;
+}
+
+.centerCap{
+    height: 6%;
+    width: 100%;
+    background-color: #08D;
+    border-radius: 100%;
+}
+
+.centerBit{
+    height: 18%;
+    width: 100%;
+    background-color: #08D;
+}
+
+.centerDiv{
+    height: 2.5%;
+    width: 100%;
+    background-color: #08D;
+    border-radius: 25px;
+}
+
+.centerByte{
+    height: 47%;
+    width: 100%;
+    background-color: #08D;
+}
+
+#centerTop{
+    position: relative;
+    top: -25px;
+}
+
+#centerBottom{
+    position: relative;
+    bottom: -25px;
+}
+
+#centerTopDiv{
+    position: relative;
+    top: -12px;
+}
+
+#centerBottomDiv{
+    position: relative;
+    bottom: -12px;
+}
+
+.right{
+    float: left;
+    margin: 10px;
+    width: 42%;
+}
+
+.button{
+    margin: 0px 25px;
+    border-radius: 40px;
+    height: 70px;
+    width: 70px;
+    position: relative;
+    top: -75px;
+    left: 15px;
+}
+
+#buttonNouns1{
+    background-color: #A0F;
+    box-shadow: 0px 6px 0px  #80D;
+}
+#buttonNouns1:hover{
+    background-color: #80D;
+    box-shadow: 0px 6px 0px  #60B;
+}
+#buttonNouns1:active{
+    position: relative;
+    top: -69px;
+    background-color: #C2F;
+    box-shadow: none;
+}
+
+#buttonVerbs{
+    background-color: #0AF;
+    box-shadow: 0px 6px 0px  #08D;
+}
+#buttonVerbs:hover{
+    background-color: #08D;
+    box-shadow: 0px 6px 0px  #06B;
+}
+#buttonVerbs:active{
+    position: relative;
+    top: -69px;
+    background-color: #2CF;
+    box-shadow: none;
+}
+
+#buttonAdjectives{
+    background-color: #3F3;
+    box-shadow: 0px 6px 0px  #1D1;
+}
+#buttonAdjectives:hover{
+    background-color: #1D1;
+    box-shadow: 0px 6px 0px  #0B0;
+}
+#buttonAdjectives:active{
+    position: relative;
+    top: -69px;
+    background-color: #5F5;
+    box-shadow: none;
+}
+
+#buttonNouns2{
+    background-color: #FA0;
+    box-shadow: 0px 6px 0px  #D80;
+}
+#buttonNouns2:hover{
+    background-color: #D80;
+    box-shadow: 0px 6px 0px  #B60;
+}
+#buttonNouns2:active{
+    position: relative;
+    top: -69px;
+    background-color: #FC2;
+    box-shadow: none;
+}
+
+#buttonNouns3{
+    background-color: #F0A;
+    box-shadow: 0px 6px 0px  #D08;
+}
+#buttonNouns3:hover{
+    background-color: #D08;
+    box-shadow: 0px 6px 0px  #B06;
+}
+#buttonNouns3:active{
+    position: relative;
+    top: -69px;
+    background-color: #F2C;
+    box-shadow: none;
+}
+
+#buttonPlayback{
+    position: relative;
+    top: 400px;
+    left: -10px;
+    background-color: #0FA;
+    box-shadow: 0px 6px 0px  #0D8;
+}
+#buttonPlayback:hover{
+    position: relative;
+    top: 400px;
+    left: -10px;
+    background-color: #0D8;
+    box-shadow: 0px 6px 0px  #0B6;
+}
+#buttonPlayback:active{
+    position: relative;
+    top: 406px;
+    left: -10px;
+    background-color: #2FC;
+    box-shadow: none;
+}
+
+#buttonSurprise{
+    position: relative;
+    top: 380px;
+    left: -20px;
+    background-color: #C00;
+    box-shadow: 0px 6px 0px  #A00;
+}
+#buttonSurprise:hover{
+    position: relative;
+    top: 380px;
+    left: -20px;
+    background-color: #A00;
+    box-shadow: 0px 6px 0px  #800;
+}
+#buttonSurprise:active{
+    position: relative;
+    top: 386px;
+    left: -20px;
+    background-color: #E22;
+    box-shadow: none;
+}
+
+#buttonRepeatSurprise{
+    position: relative;
+    top: 360px;
+    left: -30px;
+    background-color: #DDD;
+    box-shadow: 0px 6px 0px  #BBB;
+}
+#buttonRepeatSurprise:hover{
+    position: relative;
+    top: 360px;
+    left: -30px;
+    background-color: #BBB;
+    box-shadow: 0px 6px 0px  #999;
+}
+#buttonRepeatSurprise:active{
+    position: relative;
+    top: 366px;
+    left: -30px;
+    background-color: #FFF;
+    box-shadow: none;
+}
+
+#buttonBackwards{
+    position: relative;
+    top: 340px;
+    left: -40px;
+    background-color: #444;
+    box-shadow: 0px 6px 0px  #222;
+}
+#buttonBackwards:hover{
+    position: relative;
+    top: 340px;
+    left: -40px;
+    background-color: #222;
+    box-shadow: 0px 6px 0px  #000;
+}
+#buttonBackwards:active{
+    position: relative;
+    top: 346px;
+    left: -40px;
+    background-color: #666;
+    box-shadow: none;
+}
+
+.faded{
+    font-size: 50px;
+    position: relative;
+    top: -30px;
+    left: 40px;
+    font-family: "Cooper";
+    color: #E8E800;
+    text-shadow: 0px 0px 5px #A8A800;
+}
+
+#disableSelectionGreen{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 18px;
+    position: relative;
+    top: 390px;
+    left: -10px;
+    text-shadow: none;
+    color: #0B6;
+    transform: rotate(-12deg);
+}
+
+#disableSelectionRed{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 18px;
+    position: relative;
+    top: 370px;
+    left: -25px;
+    text-shadow: none;
+    color: #C00;
+    transform: rotate(-12deg);
+}
+
+#disableSelectionWhite{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 18px;
+    position: relative;
+    top: 345px;
+    left: -10px;
+    text-shadow: none;
+    color: #BBB;
+    transform: rotate(-12deg);
+}
+
+#disableSelectionBlack{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 18px;
+    position: relative;
+    top: 340px;
+    left: -125px;
+    text-shadow: none;
+    color: #444;
+    transform: rotate(-12deg);
+    width:200px;
+}
+
+.subColumn{
+    text-align: center;
+}
+
+img{
+    height: 65px;
+    width: 65px;
+    margin-bottom: -20px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.text{
+    font-family: "Cooper";
+    margin-bottom: 0;
+    font-size: 18px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    line-height: 14px;
+}
+
+.sixth{
+    height: 117px;
+}
+
+.seventh{
+    height: 97px;
+}
+
+#shorten{
+    height: 114px;
+}
+
+.bookWorm{
+    position: absolute;
+    top: 28%;
+    left: 68%;
+    height: 35%;
+    width: 17%;
+}
